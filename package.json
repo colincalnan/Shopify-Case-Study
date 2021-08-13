@@ -1,0 +1,33 @@
+{
+  "name": "shopify-node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon ./server/index.js --watch  ./server/index.js",
+    "build": "NEXT_TELEMETRY_DISABLED=1 next build",
+    "start": "cross-env NODE_ENV=production node ./server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shopify/app-bridge-react": "^2.0.3",
+    "@shopify/app-bridge-utils": "^2.0.3",
+    "@shopify/koa-shopify-auth": "^4.1.4",
+    "@shopify/polaris": "^6.6.0",
+    "apollo-boost": "^0.4.9",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.5.1",
+    "graphql-request": "^3.5.0",
+    "isomorphic-fetch": "^3.0.0",
+    "koa": "^2.13.1",
+    "koa-router": "^8.0.8",
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^17.0.2"
+  }
+}
