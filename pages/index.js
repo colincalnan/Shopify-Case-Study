@@ -2,7 +2,6 @@ import { Frame, Layout, Page } from "@shopify/polaris";
 import NewestProductTitle from "./components/NewestProductTitle";
 import BulkOperationStatus from "./components/BulkOperationStatus";
 import TotalNumberOfProducts from "./components/TotalNumberOfProducts";
-import RateLimits from "./components/OldRateLimits";
 
 const Index = (props) => (
   <Frame>
@@ -10,9 +9,8 @@ const Index = (props) => (
       <Layout>
         <Layout.Section>
           <NewestProductTitle />
-          <BulkOperationStatus />
           <TotalNumberOfProducts {...props} />
-          {/* <RateLimits {...props} /> */}
+          <BulkOperationStatus />
         </Layout.Section>
       </Layout>
     </Page>
